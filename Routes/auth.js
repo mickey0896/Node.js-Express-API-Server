@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express();
 
-// Route 1
+// http://localhost:5000/api/auth
 router.get("/auth", (req, res) => {
   res.send("Hello auth Endpoin");
 });
