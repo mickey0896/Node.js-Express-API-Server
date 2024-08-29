@@ -5,12 +5,9 @@ const body = require("body-parser");
 const { readdirSync } = require("fs");
 const bodyParser = require("body-parser");
 const connectDB = require("./Config/db");
-// const productRouters = require("./Route/product");
-// const authRouters = require("./Route/auth");
+
 const app = express();
 connectDB();
-// app.use("/api", productRouters);
-// app.use("/api", authRouters);
 app.use(morgan("dev"));
 app.use(cors());
 app.use(bodyParser.json({ limit: "10mb" }));
